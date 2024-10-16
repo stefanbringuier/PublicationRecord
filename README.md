@@ -1,4 +1,7 @@
-## ORCID Publication Record Generator
+# Publication Record
+Releases contain BibTex file for publications by [Stefan Bringuier (ORCID: 0000-0001-6753-1437)](https://orcid.org/0000-0001-6753-1437)
+
+## #ORCID Publication Record Generator
 
 Automates the process of fetching ORCID publications and generating a BibTeX file via GitHub Actions.
 
