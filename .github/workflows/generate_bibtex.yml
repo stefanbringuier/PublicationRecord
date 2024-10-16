@@ -2,7 +2,7 @@ name: Generate BibTeX from ORCID
 
 on:
   schedule:
-    - cron: '0 0 1 */3 *'  # At 00:00 on the 1st day of every 3rd month
+    - cron: '0 0 1 */3 *'  # Runs every 3 months at midnight on the 1st day of the month
   workflow_dispatch:
 
 jobs:
