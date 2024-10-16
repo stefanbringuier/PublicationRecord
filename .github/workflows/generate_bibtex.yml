@@ -3,7 +3,7 @@ name: Generate BibTeX from ORCID
 on:
   schedule:
     - cron: '0 0 1 */3 *'  # Runs every 3 months at midnight on the 1st day of the month
-  workflow_dispatch:
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   build:
@@ -37,6 +37,6 @@ jobs:
       with:
         files: PublicationRecord_${{ steps.get_date.outputs.date }}.bib
         tag_name: 'v${{ steps.get_date.outputs.date }}'
-        release_name: 'PublicationRecord_${{ steps.get_date.outputs.date }}'
+        name: 'PublicationRecord_${{ steps.get_date.outputs.date }}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
